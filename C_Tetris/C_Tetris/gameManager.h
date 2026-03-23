@@ -1,7 +1,13 @@
 #ifndef _GAMEMANAGER_H_
 #define _GAMEMANAGER_H_
+
+int getIsGameOver();
+void setGameOver(int value);
+
+int getPosX();
+void setPosX(int value);
+
+int getPosY();
+void setPosY(int value);
+
 #endif 
-
-#include <stdio.h>
-
-int isGameOver = 0; // 1일 경우 게임오버, 0일 경우 게임 진행 중

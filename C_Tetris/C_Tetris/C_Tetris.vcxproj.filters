@@ -19,15 +19,45 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="util.h">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="init.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="board.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="gameManager.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="util.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="block.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="draw.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="gameManager.h">
-      <Filter>소스 파일</Filter>
-    </ClInclude>
     <ClInclude Include="block.h">
-      <Filter>소스 파일</Filter>
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="gameManager.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="init.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="config.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="board.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="draw.h">
+      <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

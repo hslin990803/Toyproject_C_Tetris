@@ -10,7 +10,7 @@
 void drawBoard() {
 	for (int y = 0; y < MAX_HEIGHT; y++) {
 		for (int x = 0; x < MAX_WIDTH; x++) {
-			gotoxy(getPosX() + x * 2, getPosY() + y);
+			gotoxy(getPrintPosX() + x * 2, getPrintPosY() + y);
 			switch (getCell(y,x)) {
 			case EMPTY:
 				printf(" ");
@@ -35,10 +35,11 @@ void drawBoard() {
 	}
 }
 
+// 블럭 관련 테스트용 출력 (제거 예정)
 void drawBlock() {
 	for (int y = 0; y < 4; y++) {
 		for (int x = 0; x < 4; x++) {
-			gotoxy(getPosX() + x * 2, getPosY() + y);
+			gotoxy(getSpawnBlockPosX() + getPrintPosX() + x * 2, getSpawnBlockPosY() + getPrintPosY() + y);
 			switch (getBlock(0, y, x)) {
 			case EMPTY:
 				printf(" ");

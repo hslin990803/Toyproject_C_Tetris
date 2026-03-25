@@ -3,5 +3,6 @@
 
 int getCell(int y, int x);
 void setCell(int y, int x, int value);
+void initGameBoard();
 
 #endif 

@@ -4,10 +4,15 @@
 int getIsGameOver();
 void setGameOver(int value);
 
-int getPosX();
-void setPosX(int value);
+int getPrintPosX();
+void setPrintPosX(int value);
 
-int getPosY();
-void setPosY(int value);
+int getPrintPosY();
+void setPrintPosY(int value);
 
+int getSpawnBlockPosX();
+void setSpawnBlockPosX(int value);
+
+int getSpawnBlockPosY();
+void setSpawnBlockPosY(int value);
 #endif 

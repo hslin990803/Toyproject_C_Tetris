@@ -126,7 +126,7 @@
     <ClCompile Include="block.c" />
     <ClCompile Include="board.c" />
     <ClCompile Include="gameManager.c" />
-    <ClCompile Include="init.c" />
+    <ClCompile Include="input.c" />
     <ClCompile Include="main.c" />
     <ClCompile Include="util.c" />
     <ClCompile Include="util.h" />
@@ -137,7 +137,7 @@
     <ClInclude Include="config.h" />
     <ClInclude Include="draw.h" />
     <ClInclude Include="gameManager.h" />
-    <ClInclude Include="init.h" />
+    <ClInclude Include="input.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="draw.c">

@@ -2,7 +2,7 @@
 #define _CONFIG_H_
 
 #define MAX_WIDTH 12
-#define MAX_HEIGHT 22
+#define MAX_HEIGHT 23
 
 #define EMPTY 0			// 빈 곳
 #define BLOCK 1			// 움직이는 블럭

@@ -4,6 +4,8 @@
 #define MAX_WIDTH 12
 #define MAX_HEIGHT 23
 
+#define QUE_SIZE 15		// 넥스트 큐 사이즈
+
 #define EMPTY 0			// 빈 곳
 #define BLOCK 1			// 움직이는 블럭
 #define FIXED_BLOCK 2	// 굳어진 블럭

@@ -13,15 +13,20 @@
 int main()
 {
 	/* 초기 세팅 */
+	srand((unsigned int)time(NULL)); // 매번 다른 시드값 생성
 	hideCursor();		// 커서 지우기
 	setGameOver(0);		// isGameOver 세팅
 	initGameBoard();	// 필드 벽 세팅
-	srand((unsigned int)time(NULL)); // 매번 다른 시드값 생성
+	initGameManger();
 
+	for (int i = 0; i < 15; i++) { // 셔플 테스트용
+		printf("i = %d, value = %d \n", i, getQueData());
+	}
 	while (getIsGameOver() != 1) {
 		/*inputKey();*/
-		//drawBoard();
+		/*drawBoard();*/
 		/*drawBlock();*/
+		
 	}
 
 	return 0;

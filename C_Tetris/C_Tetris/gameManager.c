@@ -11,8 +11,42 @@ static int printPosY = 2;		// gotoxy 출력용, 기본 포지션
 static int spawnBlockPosX = 8;	// 블럭 스폰 포지션
 static int spawnBlockPosY = 0;	// 블럭 스폰 포지션
 
-static int bag[7] = { 0,1,2,3,4,5,6 };
+static int bag[BAG_SIZE] = { 0,1,2,3,4,5,6 };
 static int bagIndex;
+
+static NextList nextQue; // nextQue 선언
+
+void initGameManger() {
+    initQue(&nextQue);  // 큐 초기화
+    
+    for (int i = 0; i < 2; i++) { // 초기 세팅을 위해 2번 삽입
+        insertBagToQue();
+    }
+}
+
+void insertBagToQue() {
+    shuffle(bag, BAG_SIZE);
+
+    for (int i = 0; i < BAG_SIZE; i++) {
+        insertQueue(&nextQue, bag[i]);
+    }
+}
+
+int getQueData() {
+    return deleteQueue(&nextQue);
+}
+
+void shuffle(int* arr, int num) {
+    int temp;
+    int random;
+
+    for (int i = 0; i < num - 1; i++) {
+        random = rand() % (num - i) + i;    // i 부터 num-1 사이에 임의의 정수 생성
+        temp = arr[i];
+        arr[i] = arr[random];
+        arr[random] = temp;
+    }
+}
 
 // 큐의 front와 rear을 0으로 초기화
 void initQue(NextList* que) {

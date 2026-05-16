@@ -12,6 +12,8 @@
 #define GHOST_BLOCK 3	// 고스트 블럭
 #define WALL 4			// 벽
 
+#define BAG_SIZE 7		// 7bag 사이즈
+
 #define KEY_UP 72		// 상(오른쪽으로 회전) 72
 #define KEY_DOWN 80		// 하(소프트 드랍)	 80
 #define KEY_LEFT 75		// 좌(왼쪽으로 블럭 이동) 75

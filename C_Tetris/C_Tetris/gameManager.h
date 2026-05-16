@@ -17,6 +17,12 @@ void setSpawnBlockPosX(int value);
 int getSpawnBlockPosY();
 void setSpawnBlockPosY(int value);
 
+void insertBagToQue();
+void shuffle(int* arr, int num);
+
+void initGameManger();	// gameManager 초기화
+int getQueData();
+
 // 원형 큐 구조체
 typedef struct {
 	int data[QUE_SIZE];	// 데이터를 담을 배열
@@ -29,4 +35,5 @@ int isQueEmpty(NextList* que);
 int isQueFull(NextList* que);
 int insertQueue(NextList* que, int value);
 int deleteQueue(NextList* que);
+
 #endif 
